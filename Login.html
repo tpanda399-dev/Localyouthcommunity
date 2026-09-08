@@ -145,12 +145,18 @@
     <div class="home">
       <a href="index.html">← Back to Home</a>
     </div>
+ </div>
+ </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
-  </div>
+<script>
+  const SUPABASE_URL = "https://athtcnuhkbnrljnbofus.supabase.co";
+  const SUPABASE_KEY = "sb_publishable_gz8dfZ-nWgKygbdYC3Du-w_JA9dXLTQ";
 
-  <script>
-    // Supabase connection will be added in the next step.
-  </script>
-
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+</script>
 </body>
 </html>
